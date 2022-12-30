@@ -24,7 +24,6 @@ namespace anomaly_detector_quickstart
 			AnomalyDetectorClient client = new AnomalyDetectorClient(endpointUri, credential);
 
 			//read data
-			//example: string datapath = @"c:\test\request-data.csv";
 			string datapath = @"request-data.csv";
 
 			List<TimeSeriesPoint> list = File.ReadAllLines(datapath, Encoding.UTF8)
